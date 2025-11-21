@@ -118,3 +118,10 @@
   border-radius: var(--radius-md);
   background: var(--bg-section);
 }
+
+
+.projects h4:first-of-type {
+  border-top: none;
+  margin-top: var(--spacing-3xl);
+  padding-top: 0;
+}
