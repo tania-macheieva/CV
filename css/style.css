@@ -93,12 +93,13 @@ li {
     padding: var(--spacing-xs) 0;
     line-height: var(--line-height-tight);
     color: var(--color-text-light);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
     text-align: left;
 }
 
 a {
     color: var(--color-text-light);
+    font-size: var(--font-size-xs);
     text-decoration: none;
     transition: all 0.3s ease;
 }
