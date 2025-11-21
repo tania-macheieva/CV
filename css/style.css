@@ -60,9 +60,17 @@ h3 {
 h4 {
     color: var(--color-text-dark);
     font-size: var(--font-size-base);
-    margin-top: var(--spacing-3xl);
+    margin-top: var(--spacing-4xl);
     margin-bottom: var(--spacing-sm);
     font-weight: var(--font-weight-semibold);
+    border-top: 1px solid var(--color-divider);
+    padding-top: var(--spacing-lg);
+}
+
+.projects h4:first-of-type {
+    border-top: none;
+    margin-top: var(--spacing-3xl);
+    padding-top: 0;
 }
 
 h4 span {
