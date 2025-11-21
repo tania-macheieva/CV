@@ -1,0 +1,120 @@
+@import url('./variables.css');
+
+.container {
+  position: relative;
+  z-index: 1;
+  background: (var(--color-primary), var(--bg-white));
+  box-shadow: var(--shadow-md);
+  padding: 0;
+  border-radius: var(--radius-lg);
+  max-width: var(--container-max-width);
+  margin: var(--spacing-3xl) auto;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--color-primary);
+  color: var(--color-text-white);
+  padding: var(--spacing-3xl) var(--spacing-xl);
+  text-align: center;
+  border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+}
+
+.profile-pic {
+  width: 70%;
+  height: auto;
+  margin: var(--spacing-lg) 0;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: var(--border-lg) solid var(--color-border-light);
+  margin-bottom: var(--spacing-xl);
+}
+
+.sidebar h1 {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-white);
+  margin: var(--spacing-lg) 0 var(--spacing-xs);
+  font-weight: var(--font-weight-semibold);
+}
+
+.sidebar h2 {
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-2xl);
+  font-weight: var(--font-weight-normal);
+}
+
+.sidebar h3 {
+  background: transparent;
+  color: var(--color-text-white);
+  padding: var(--spacing-sm) 0;
+  font-size: var(--font-size-md);
+  border-bottom: var(--border-sm) solid var(--color-border-light);
+  border-left: none;
+  text-align: left;
+}
+
+.sidebar p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  line-height: var(--line-height-tight);
+  text-align: left;
+  margin: var(--spacing-sm) 0;
+}
+
+.sidebar strong {
+  color: var(--color-text-white);
+}
+
+
+.content {
+  width: var(--content-width);
+  padding: var(--spacing-4xl);
+  background: var(--bg-light);
+}
+
+.content h1 {
+  font-size: var(--font-size-3xl);
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-lg);
+  font-weight: var(--font-weight-semibold);
+  border-bottom: var(--border-md) solid var(--color-divider);
+  padding-bottom: var(--spacing-md);
+}
+
+.content ul li {
+  color: var(--color-text-medium);
+}
+
+.content a {
+  color: var(--color-link-blue);
+}
+
+.content a:hover {
+  color: var(--color-link-blue-hover);
+  text-shadow: none;
+}
+
+.content .icon {
+  color: var(--color-link-blue);
+}
+
+
+.card {
+  margin-bottom: var(--spacing-2xl);
+  background: var(--bg-card);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+}
+
+.about,
+.projects,
+.education {
+  margin-bottom: var(--spacing-2xl);
+  padding: var(--spacing-xl);
+  border: var(--border-sm) solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--bg-section);
+}

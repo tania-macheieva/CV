@@ -1,0 +1,34 @@
+@import url('./variables.css');
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+        margin: var(--spacing-lg) auto;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: var(--spacing-2xl) var(--spacing-lg);
+    }
+
+    .content {
+        width: 100%;
+        padding: var(--spacing-2xl) var(--spacing-xl);
+    }
+
+    .profile-pic {
+        width: auto;
+        height: 180px;
+    }
+
+    .content h1 {
+        font-size: var(--font-size-2xl);
+    }
+
+    h3 {
+        font-size: var(--font-size-base);
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

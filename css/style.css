@@ -1,0 +1,115 @@
+@import url('./animations.css');
+@import url('./layout.css');
+@import url('./variables.css');
+@import url('./responsive.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary), var(--font-secondary), sans-serif;
+    color: var(--color-text-dark);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-45deg, #20002c, #f4f4a0, #c0accf, var(--color-accent-hover));
+    background-size: 300% 300%;
+    animation: moveBackground 10s ease infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg,
+            var(--bg-dark-1) 0%,
+            var(--bg-dark-2) 25%,
+            var(--bg-dark-3) 50%,
+            var(--bg-dark-4) 75%,
+            var(--bg-dark-5) 100%);
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+h3 {
+    color: var(--color-text-dark);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+h4 {
+    color: var(--color-text-dark);
+    font-size: var(--font-size-base);
+    margin-top: var(--spacing-3xl);
+    margin-bottom: var(--spacing-sm);
+    font-weight: var(--font-weight-semibold);
+}
+
+h4 span {
+    color: var(--bg-dark-5);
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-sm);
+}
+
+p {
+    line-height: var(--line-height-normal);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-medium);
+    font-size: var(--font-size-sm);
+}
+
+strong {
+    color: var(--color-text-dark);
+    font-weight: var(--font-weight-semibold);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: var(--spacing-xs) 0;
+    line-height: var(--line-height-tight);
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+    text-align: left;
+}
+
+a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-accent);
+    text-shadow: var(--shadow-glow-blue);
+}
+
+.icon {
+    margin-right: var(--spacing-sm);
+    color: var(--color-accent);
+    font-weight: bold;
+}
