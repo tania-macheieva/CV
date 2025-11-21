@@ -21,8 +21,7 @@
 
     --color-tech-icon: rgba(255, 255, 255, 0.15);
     --color-code-line: rgba(16, 185, 129, 0.3);
-    --color-particle: rgba(139, 92, 246, 0.6);
-    --color-binary: rgba(34, 197, 94, 0.2);
+    --color-particle: #66adef;
 
     --color-link-blue: #2563eb;
     --color-link-blue-hover: #1e3a8a;
