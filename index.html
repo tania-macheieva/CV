@@ -16,19 +16,10 @@
 </head>
 
 <body>
-    <!-- ANIMATED BACKGROUND -->
     <div id="animated-bg">
-        <div class="tech-icon"><i class="devicon-csharp-plain"></i></div>
-        <div class="tech-icon"><i class="devicon-ruby-plain"></i></div>
-        <div class="tech-icon"><i class="fab fa-docker"></i></div>
-        <div class="tech-icon"><i class="devicon-dotnetcore-plain"></i></div>
-        <div class="tech-icon"><i class="devicon-rails-plain"></i></div>
-        <div class="tech-icon"><i class="fab fa-github"></i></div>
-        <div class="tech-icon"><i class="fa-solid fa-database"></i></div>
-        <div class="tech-icon"><i class="fab fa-react"></i></div>
-        <div class="tech-icon"><i class="fab fa-node-js"></i></div>
-        <div class="tech-icon"><i class="fab fa-git-alt"></i></div>
-
+        
+        <div class="tech-icons-container"></div>
+        
         <div class="code-lines">
             <div class="code-line">const developer = { name: 'Tania', skills: [ '.NET', 'C#', 'JavaScript', 'Ruby'] };
             </div>
@@ -42,7 +33,6 @@
     </div>
 
     <div class="container">
-        <!-- SIDEBAR -->
         <aside class="sidebar">
             <div class="profile">
                 <img src="img/avatar.jpg" alt="Profile photo of Tania Macheieva" class="profile-pic" />
@@ -70,9 +60,10 @@
                     <li><strong>Frameworks & Tools:</strong> .NET, Ruby on Rails, Node.js, Express.js, Next.js,
                         Tailwind, React, RSpec, Docker</li>
                     <li><strong>Databases:</strong> PostgreSQL, Mongo, MySQL, SQLite (advanced SQL, DB design)</li>
+                    <li><strong>Modeling & Design:</strong> UML (basic)</li>
                     <li><strong>Web Development:</strong> HTML, CSS</li>
                     <li><strong>Version Control:</strong> Git, GitHub (branching, PRs, code review)</li>
-                    <li><strong>Other Tools:</strong> UML (basic), Postman, Figma (basic)</li>
+                    <li><strong>Other Tools:</strong> Postman, Figma (basic)</li>
                 </ul>
             </div>
 
@@ -89,7 +80,7 @@
 
             <div class="card">
                 <h3><i class="fa-solid fa-language icon"></i> Languages</h3>
-                <ul>
+                <ul class="language-list">
                     <li>
                         <strong>English</strong> (Intermediate / B1-B2)
                     </li>
@@ -100,15 +91,14 @@
             </div>
         </aside>
 
-        <!-- MAIN CONTENT -->
         <main class="content">
             <section class="about">
                 <h3>About Me</h3>
-                <p>Passionate Fullstack Developer with a strong focus on the C# / .NET framework, dedicated to building
+                <p>Passionate Developer with a strong primary focus on Backend engineering and the **C# / .NET** framework, dedicated to building
                     robust, high-performance, and scalable server-side applications. I have hands-on experience in
                     architecting and implementing core business logic, utilizing .NET Core for powerful services, and
                     managing databases efficiently, including optimized queries and schema design.
-                    While my primary expertise is in backend development, I also bring valuable full-stack experience
+                    While my core interest lies in the Backend, I also bring valuable full-stack experience
                     from projects using Node.js, Ruby on Rails, and React, enabling seamless collaboration with frontend
                     teams. Experienced in leveraging Docker for unified deployment, I continuously strive to improve my
                     skills in writing clean, maintainable, and high-quality code.
@@ -167,8 +157,8 @@
         </main>
     </div>
 
+    <script src="./js/techIcons.js"></script> 
     <script src="./js/particles.js"></script>
-    <script src="./js/techIcons.js"></script>
 </body>
 
 </html>
