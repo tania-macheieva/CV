@@ -33,6 +33,7 @@
     --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.15);
     --shadow-glow-white: 0 0 20px rgba(255, 255, 255, 0.3);
     --shadow-glow-blue: 0 0 8px rgba(141, 208, 255, 0.6);
+    --shadow-glow-blue-btn: 0 0 8px rgba(52, 152, 219, 0.4);
     --shadow-glow-particle: 0 0 10px rgba(139, 92, 246, 0.8);
 
     --font-primary: 'Montserrat', sans-serif;

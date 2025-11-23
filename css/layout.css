@@ -1,9 +1,9 @@
-@import url('./variables.css');
+@import url(./variables.css);
 
 .container {
   position: relative;
   z-index: 1;
-  background: (var(--color-primary), var(--bg-white));
+  background-image: linear-gradient(to right, var(--color-primary), var(--bg-white));
   box-shadow: var(--shadow-md);
   padding: 0;
   border-radius: var(--radius-lg);
@@ -111,8 +111,9 @@
 
 .about,
 .projects,
-.education {
-  margin-bottom: var(--spacing-2xl);
+.education,
+.courses {
+  margin-bottom: var(--spacing-4xl);
   padding: var(--spacing-xl);
   border: var(--border-sm) solid var(--color-border);
   border-radius: var(--radius-md);
@@ -124,4 +125,38 @@
   border-top: none;
   margin-top: var(--spacing-3xl);
   padding-top: 0;
+}
+
+.download-btn {
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 1px solid var(--color-accent);
+  color: var(--color-text-white);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.download-btn:hover {
+  background: var(--color-accent-hover);
+  color: var(--color-text-white);
+  box-shadow: 0 0 10px var(--shadow-glow-blue-btn);
+  transform: translateY(-1px);
+}
+
+.download-btn .icon {
+  color: var(--color-accent-hover);
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover .icon {
+  color: var(--color-text-white);
 }
